@@ -1,6 +1,9 @@
 ﻿using ExchangeRateViewer.API.ExceptionHandlers.Common;
+using ExchangeRateViewer.API.Filters;
 using ExchangeRateViewer.API.Security;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 using System.Linq;
 using System.Reflection;
 
@@ -13,6 +16,15 @@ namespace ExchangeRateViewer.API
             services.AddScoped<IApiKeyGenerator, ApiKeyGenerator>();
             services.AddScoped<IExceptionHandlerContext, ExceptionHandlerContext>();
             services.AddExceptionHandlers();
+            services.AddControllers(options => options.Filters.Add<ApiExceptionFilterAttribute>())
+                .AddFluentValidation(x => x.AutomaticValidationEnabled = false);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ExchangeRateViewer.API", Version = "v1" });
+            });
+
+            services.AddResponseCaching();
 
             return services;
         }
