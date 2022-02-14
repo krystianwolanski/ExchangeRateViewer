@@ -12,12 +12,12 @@ Przykładowy connection string:
 Aplikacja do mapowania obiektowo-relacyjnego wykorzystuje `EntityFramework`.
 Do utworzenia dokumentacji został użyty `Swagger API`. Definja endpointów znajduje się pod adresem `{baseUrl}/swagger`.
 
-# Start aplikacji
+### Start aplikacji
 Aby móc korzystać z API wystarczy ustanowić połączenie z bazą danych w pliku `appsettings.json` oraz uruchomić aplikację
 korzystacjąć z profilu zdefiniowanego w `ExchangeRateViewer.API/Properties/launchSettings.json`. Utworzenie bazy danych oraz tabel zostanie zostanie wykonane automatycznie.
 
-# Architektura
+### Architektura
 Aplikacja podzielona jest na 3 warstwy:
-`- API` - warstwa prezentacji, odpowiada za komunikację z użytkownikiem. W niej znajduje się definicje endpointów oraz obsługa wyjątków pojawiających się w aplikacji.
-`- Application` - warstwa, w której znajduje się cała logika aplikacji opierająca się na abstrakcjach.
-`- Infrastructure` - wartwa, w której znajdują się implementację abstrackji z warstwy `Application`.
+* `- API` - warstwa prezentacji, odpowiada za komunikację z użytkownikiem. W niej znajduje się definicje endpointów oraz obsługa wyjątków pojawiających się w aplikacji.
+* `- Application` - warstwa, w której znajduje się cała logika aplikacji opierająca się na abstrakcjach.
+* `- Infrastructure` - wartwa, w której znajdują się implementację abstrackji z warstwy `Application`.
