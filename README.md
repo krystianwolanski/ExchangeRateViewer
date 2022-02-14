@@ -20,4 +20,4 @@ korzystacjąć z profilu zdefiniowanego w `ExchangeRateViewer.API/Properties/lau
 Aplikacja podzielona jest na 3 warstwy:
 * `API` - warstwa prezentacji, odpowiada za komunikację z użytkownikiem. W niej znajduje się definicje endpointów oraz obsługa wyjątków pojawiających się w aplikacji.
 * `Application` - warstwa, w której znajduje się cała logika aplikacji opierająca się na abstrakcjach.
-* `Infrastructure` - wartwa, w której znajdują się implementację abstrackji z warstwy `Application`.
+* `Infrastructure` - wartwa, w której znajdują się implementację abstrakcji z warstwy `Application`.
