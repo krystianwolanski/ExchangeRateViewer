@@ -14,7 +14,7 @@ Do utworzenia dokumentacji został użyty `Swagger API`. Definja endpointów zna
 
 ### Start aplikacji
 Aby móc korzystać z API wystarczy ustanowić połączenie z bazą danych w pliku `appsettings.json` oraz uruchomić aplikację
-korzystacjąć z profilu zdefiniowanego w `ExchangeRateViewer.API/Properties/launchSettings.json`. Utworzenie bazy danych oraz tabel zostanie zostanie wykonane automatycznie.
+poprzez jeden z profili zdefiniowanych w `ExchangeRateViewer.API/Properties/launchSettings.json`. Utworzenie bazy danych oraz tabel zostanie wykonane automatycznie.
 
 ### Architektura
 Aplikacja podzielona jest na 3 warstwy:
