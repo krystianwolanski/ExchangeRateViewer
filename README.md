@@ -1,6 +1,6 @@
 # ExchangeRateViewer
 Jest to API do pobierania kursów walut utworzone w .NET 5.
-Do poprawnego działania aplikacji wymagane jest ustanowienie połączenia do relacyjnej bazy danych w pliku `appsettings.json` 
+Do poprawnego działania aplikacji wymagane jest ustanowienie połączenia do relacyjnej bazy danych SqlServer w pliku `appsettings.json` 
 w sekcji `ConnectionStrings/ExchangeRateViewerDbConnection`.
 Przykładowy connection string:
 
